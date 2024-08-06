@@ -1,2 +1,22 @@
-# LLM-Perf-Energy-Optimization
-Quantitative measure scoring LLM model’s energy-efficiency-to-performance attainment from Hugging Face’s llm-perf evaluation benchmark database and a concurrent system to evaluate and recommend potential efficiency upgrades with respect to a model’s parameters
+# Project Title:
+Towards Greener AI: An Energy-Performance Metric and Framework Recommendation System for Large Language Models
+# Author: 
+Kate Poole 
+
+# Overview:
+This project develops an energy-performance scoring and recommendation system for Large Language Models (LLMs). The system normalizes data, calculates an energy-performance score, performs group-wise optimization, and provides recommendations based on new LLM-Perf data entries.
+
+# Use:
+Access the scripts of this project sequentially in the terminal by calling "python 'script'.py". Ensure that all scripts are saved in the same working directory along with the appropriate data LLM-Perf .csv file. Data MUST be in .csv format and named 'llm_perf_data.csv' for system to run. 
+
+
+# Scripts to call sequentially:
+
+1. script_normalize_and_score.py
+This script calculates the energy-performance score based on normalized variable values and pre-determined weights
+
+2. script_groupwise_optimization.py
+This script creates memory quantiles and finds the optimal energy-performance scored model per quantile
+
+3. script_recommendation_system.py
+This script returns the optimal observation for a given new LLM-Perf data entry. An important note is that this version of this script features a hard-coded LLM-Perf "new" data entry in the boilerplate construct code for presentation purposes. In true implementation to the HuggingFace LLM-Perf backend, this script will receive dynamic new data inputs rather than this static sample.
