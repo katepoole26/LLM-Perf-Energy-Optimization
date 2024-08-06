@@ -7,9 +7,12 @@ This project develops an energy-performance scoring and recommendation system fo
 # Use:
 Access the scripts of this project sequentially in the terminal by calling "python 'script'.py". Ensure that all scripts are saved in the same working directory along with the appropriate data LLM-Perf .csv file. Data MUST be in .csv format and named 'llm_perf_data.csv' for system to run. 
 
+# Data:
+1. llm_perf_data.csv - HuggingFace's LLM-Perf A10-24GB-150W leaderboard, extracted on June 5, 2024
+2. llm_perf_data_A10080GB275W.csv - HuggingFace's LLM-Perf A100-80GB-275W leaderboard, extracted on June 20, 2024
+
 
 # Scripts to call sequentially:
-
 1. script_normalize_and_score.py
 This script calculates the energy-performance score based on normalized variable values and pre-determined weights
 
