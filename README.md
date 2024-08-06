@@ -1,7 +1,5 @@
 # Project Title:
 Towards Greener AI: An Energy-Performance Metric and Framework Recommendation System for Large Language Models
-# Author: 
-Kate Poole 
 
 # Overview:
 This project develops an energy-performance scoring and recommendation system for Large Language Models (LLMs). The system normalizes data, calculates an energy-performance score, performs group-wise optimization, and provides recommendations based on new LLM-Perf data entries.
@@ -20,3 +18,6 @@ This script creates memory quantiles and finds the optimal energy-performance sc
 
 3. script_recommendation_system.py
 This script returns the optimal observation for a given new LLM-Perf data entry. An important note is that this version of this script features a hard-coded LLM-Perf "new" data entry in the boilerplate construct code for presentation purposes. In true implementation to the HuggingFace LLM-Perf backend, this script will receive dynamic new data inputs rather than this static sample.
+
+# Author: 
+Kate Poole 
